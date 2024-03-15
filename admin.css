@@ -1,0 +1,100 @@
+/* Custom CSS for Admin Page */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 12px;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Blue background color for specific cells */
+th.blue-background,
+td.blue-background {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Alternate row background colors for better readability */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover effect for table rows */
+tbody tr:hover {
+    background-color: #e2e6ea;
+    transition: background-color 0.3s ease;
+}
+
+/* Styling for table header */
+thead th {
+    font-weight: bold;
+}
+
+/* Center align text in the table */
+th, td {
+    text-align: center;
+}
+
+/* Style for search input */
+#hostelid {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/* Style for search button */
+button[type="submit"] {
+    padding: 8px 16px;
+    background-color: #b30000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Style for add new button */
+button[type="button"] {
+    padding: 8px 16px;
+    background-color: #00b300;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+.logout-btn {
+  position: fixed; /* Fixed positioning */
+  top: 62px; /* Distance from top */
+  right: 80px; /* Distance from right */
+  background-color: #ff0000; /* Red background */
+  color: #ffffff; /* White text */
+  padding: 8px 16px; /* Padding */
+  font-size: 16px; /* Font size */
+  border: none;
+  border-radius: 4px; none; 
+  cursor: pointer; /* Cursor style */
+}
+
+/* Hover effect */
+.logout-btn:hover {
+  background-color: #cc0000; /* Darker red */
+}
+

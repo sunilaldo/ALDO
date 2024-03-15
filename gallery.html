@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Gallery</title>
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>  
+<br><center><h2>GALLERY<h2></center>
+  <div class="gallery">
+    
+    <div class="image-container">  
+      <img src="photo1.jpg" alt="Image 1" onclick="openFullscreen(this)">
+    </div>
+    <div class="image-container">
+      <img src="photo2.jpg" alt="Image 2" onclick="openFullscreen(this)">
+    </div>
+    <div class="image-container">
+      <img src="photo3.jpg" alt="Image 3" onclick="openFullscreen(this)">
+</div>
+  </div>
+
+  <script>
+    function openFullscreen(img) {
+      if (img.requestFullscreen) {
+        img.requestFullscreen();
+      } else if (img.webkitRequestFullscreen) { /* Safari */
+        img.webkitRequestFullscreen();
+      } else if (img.msRequestFullscreen) { /* IE11 */
+        img.msRequestFullscreen();
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" href="login.css"> <!-- Include your existing stylesheet -->
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">LOHO</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="login.html">HOME</a></li> <!-- Updated link to Home page -->
+                    <li><a href="#">MENU</a></li> <!-- Updated link to Home page -->
+                    <li><a href="#">COUPON</a></li>
+                    <li><a href="#">REDUCTION</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="login.html">LOG IN</a></li>
+                </ul>
+            </div>
+
+           
+        </div>
+
+        <div class="content">
+            <h1>About Us</h1>
+            <p>
+                <h2>Welcome to Loho Mess! We are a dedicated team committed to providing you with the best dining experience.
+                Our mission is to deliver delicious and nutritious meals in a welcoming and friendly atmosphere.
+            </p>
+            <p><br>
+                At Loho Mess, we value quality, freshness, and customer satisfaction. Our chefs use the finest ingredients
+                to create mouthwatering dishes that cater to diverse tastes. Whether you're a food enthusiast or someone
+                looking for a quick and wholesome meal, Loho Mess has something special for everyone.Home <h2></a></p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+   <script>
+        // JavaScript for handling menu button clicks
+        document.addEventListener("DOMContentLoaded", function() {
+            var menuButtons = document.querySelectorAll(".menu ul li:not(:nth-child(1)):not(:nth-child(8)) a"); // Exclude HOME and LOG IN buttons
+            menuButtons.forEach(function(button) {
+                button.addEventListener("click", function(event) {
+                    alert("Kindly Login first");
+                    event.preventDefault(); // Prevent default action of link
+                });
+            });
+        });
+    </script>
+</body>
+</html>

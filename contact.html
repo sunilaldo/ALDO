@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <style>
+        form {
+            width: 50%;
+            margin: 0 auto;
+        }
+        label, textarea, input[type="submit"] {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Contact Us</h2>
+
+<form action="contact.php" method="post">
+    <label for="name">Your Name:</label>
+    <input type="text" place holder="Enter Your Name" id="name" name="name" required>
+
+    <label for="email">Your Email:</label>
+    <input type="email" place holder="Enter Your Email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" place holder="Enter Your Name" rows="4" required></textarea>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
